@@ -18,6 +18,7 @@
     <div id ="start-page">
       <button id ="start-btn">Start Code Quiz</button>
       <button id ="start-high-score" >High Scores</button>
+      <button id ="start-high-score" onclick ="showHighscore()">High Scores</button>
     </div>
 
     <main id ="quiz">
@@ -32,6 +33,7 @@
 
     <section id ="quiz-end">
       <div id="high-score-result"></div>
+        <input type="text" size = "40" placeholder ="Enter you initials for high score" name ="intials" id ="initials"/>
         <button id ="submit-score">Submit Score</button>
     </section>
 
@@ -42,8 +44,8 @@
               <h2>Score</h2></div>
       </div>
       <div id ="end-quiz">
-          <button id ="play-again">Play Again</button>
-          <button id ="clear-high-score">Clear Highscores</button>
+        <button id ="play-again" onclick="restartQuiz()">Play Again</button>
+        <button id ="clear-high-score" onclick="clearScore()">Clear Highscores</button>
       </div>  
     </div>
     </section>
