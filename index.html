@@ -2,11 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript Fundamentals Quiz</title>
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Quiz</title>
+    <link rel ="stylesheet" type ="text/css" href ="./assets/css/style.css">
 </head>
 <body>
-  <h1> Welcome to the Javascript Fundamental Quiz!</h1>  
+
+  <section class ="jumbotron-custom">
+    <h1>Welcome to the Javascript Fundamentals Quiz!</h1>
+    <p>Take this quiz to test your knowledge on some javascript fundamentals.</p>
+    <hr>
+  </section>
+
+  <section class ="container">
+    <div id ="start-page">
+      <button id ="start-btn">Start Code Quiz</button>
+      <button id ="start-high-score" >High Scores</button>
+    </div>
+
+    <main id ="quiz">
+      <div id ="timer">Time left: </div>
+        <div id="questions"></div>
+            <button id ="choice-a"></button>
+            <button id ="choice-b" ></button>
+            <button id ="choice-c" ></button>
+            <button id ="choice-d" ></button>
+        <div id="result"></div>
+    </main>
+
+    <section id ="quiz-end">
+      <div id="high-score-result"></div>
+        <button id ="submit-score">Submit Score</button>
+    </section>
+
+    <div id = "high-score-info"></div>
+            <div id = "highscore-initials"> 
+              <h2>User Initials</h2></div>
+            <div id = "highscore-score">
+              <h2>Score</h2></div>
+      </div>
+      <div id ="end-quiz">
+          <button id ="play-again">Play Again</button>
+          <button id ="clear-high-score">Clear Highscores</button>
+      </div>  
+    </div>
+    </section>
+ 
+
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src ="./assets/js/script.js"></script>
+
+
 </body>
 </html>
