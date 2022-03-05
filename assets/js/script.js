@@ -30,3 +30,75 @@
 
 // need a start function for quiz
     // start timer when start button is clicked 
+
+
+//variables for elements
+var startQuizDiv = document.getElementById("start-page");
+var startQuizButton = document.getElementById("start-btn");
+
+var quizTimer = document.getElementById("timer");
+var quizBody = document.getElementById("quiz");
+var questionsEl = document.getElementById("questions");
+var buttonA = document.getElementById("choice-a");
+var buttonB = document.getElementById("choice-b");
+var buttonC = document.getElementById("choice-c");
+var buttonD = document.getElementById("choice-d");
+
+var highScoreInfo = document.getElementById("high-score-info");
+var highScoreDiv = document.getElementById("high-score-page");
+var highScore = document.getElementById("high-score");
+var endQuiz = document.getElementById("end-quiz");
+
+var quizEndEl = document.getElementById("quiz-end");
+var highScoreInitials = document.getElementById("high-score-initials");
+var scoreInputInitials = document.getElementById("initials");
+var scoreTime = document.getElementById("score-time");
+var submitScoreBtn = document.getElementById("submit-score");
+
+var resultEl = document.getElementById("result");
+var resultScoreEl = document.getElementById("high-score-result");
+
+
+// Quiz questions
+var quizQuestions = [{
+
+    question: "Which HTML element do we put the JavaScript?",
+    choiceA: "&lt;title&gt;",
+    choiceB: "&lt;script&gt;",
+    choiceC: "&lt;head&gt;",
+    choiceD: "&lt;body&gt;",
+    correctAnswer: "choice-b"},
+
+  {
+    question: "Using _____ statements is how you test for a specific condition.",
+    choiceA: "Switch",
+    choiceB: "For",
+    choiceC: "If",
+    choiceD: "Select",
+    correctAnswer: "choice-c"},
+
+    {
+    question: "JavaScript is what type of langauge?",
+    choiceA: "Object-Based",
+    choiceB: "Procedural",
+    choiceC: "Object-Oriented",
+    choiceD: "Interactive",
+    correctAnswer: "choice-c"},
+
+    {
+    question: "The 'var' and 'function' are known as?",
+    choiceA: "Data types",
+    choiceB: "Keywords",
+    choiceC: "Prototypes",
+    choiceD: "Declaration statements",
+    correctAnswer: "choice-d"},  
+
+    {
+    question: "Which of the following is known as the equality operator, which is used to check whether two values are equal to each other?",
+    choiceA: "=",
+    choiceB: "==",
+    choiceC: "===",
+    choiceD: "&&",
+    correctAnswer: "choice-b"},
+       
+    ];
