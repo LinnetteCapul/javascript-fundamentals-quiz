@@ -102,3 +102,62 @@ var quizQuestions = [{
     correctAnswer: "choice-b"},
        
     ];
+
+// Start Quiz function starts timer and hides start button. Will display quiz question.
+var timeLeft = 61;
+var timerInterval;
+function startQuiz(){
+    quizEndEl.style.display = "none";
+    startQuizDiv.style.display = "none";
+    generateQuizQuestion();
+
+    //Timer
+    timerInterval = setInterval(function() {
+        timeLeft--;
+        quizTimer.textContent = "Time left: " + timeLeft;
+    
+        if(timeLeft === 0) {
+          clearInterval(timerInterval);
+          showScore();
+        }
+      }, 1000);
+    quizBody.style.display = "block";
+}
+
+// Function goes through the object array with quiz questions to generate the questions and possible choices.
+var currentQuestionIndex = 0;
+var lastQuestionIndex = quizQuestions.length;
+function generateQuizQuestion(){
+    quizEndEl.style.display = "none";
+    if (currentQuestionIndex === lastQuestionIndex){
+        return showScore();
+    } 
+    var currentQuestion = quizQuestions[currentQuestionIndex];
+    questionsEl.innerHTML = "<p>" + currentQuestion.question + "</p>";
+    buttonA.innerHTML = currentQuestion.choiceA;
+    buttonB.innerHTML = currentQuestion.choiceB;
+    buttonC.innerHTML = currentQuestion.choiceC;
+    buttonD.innerHTML = currentQuestion.choiceD;
+};
+
+// Function checks the user choice to each question 
+var correct;
+function checkAnswer(event){
+    correct = quizQuestions[currentQuestionIndex].correctAnswer;
+
+    if (event === correct && currentQuestionIndex !== lastQuestionIndex){
+        score++;
+        alert("That Is Correct!");
+        currentQuestionIndex++;
+        generateQuizQuestion();        
+    }else if (event !== correct && currentQuestionIndex !== lastQuestionIndex){
+        alert("That Is Incorrect.")
+        currentQuestionIndex++;
+        timeLeft = timeLeft - 10;
+        generateQuizQuestion();
+    }else{
+        showScore();
+    }
+}
+
+startQuizButton.addEventListener("click",startQuiz);
