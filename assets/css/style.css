@@ -8,12 +8,13 @@ body {
 .jumbotron-custom {
     background-color: #124559;
     color: #AEC3B0;
-    font-size: 45px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 40px;
     text-align: center;
 
 }
 #timer{
-    font-family: sans-serif;
+    font-family: 'Fredoka', sans-serif;
     background-color: #01161E;
     color: #EFF6E0;
     font-size: x-large;
@@ -26,7 +27,7 @@ body {
 
 button {
     display: inline-block;
-    font-family: sans-serif;
+    font-family: 'Fredoka', sans-serif;
     background-color: #01161E;
     border-radius: 10px;
     border: 4px double #EFF6E0;
@@ -46,7 +47,7 @@ p{
     color: #EFF6E0;
     text-align: center;
     font-size: 40px;
-    font-family: sans-serif;
+    font-family: 'Fredoka', sans-serif;
 
 }
 
@@ -68,6 +69,7 @@ p{
     align-items: center;
     max-width: 100%;
     margin: 0 auto;
+    font-family: 'Fredoka', sans-serif;
   }
 
 input{
@@ -111,7 +113,7 @@ input{
     margin-bottom: 5px;
     background-color: #01161E;
     color: #EFF6E0;
-    font-family: sans-serif;
+    font-family: 'Fredoka', sans-serif;
 }
 
 #high-score{
@@ -119,14 +121,14 @@ input{
     border: groove 2px;
     float: right;
     padding-right: 30px;
-    font-family: sans-serif;
+    font-family: 'Fredoka', sans-serif;
     font-weight: bold;
 }
 
 #high-score-initials{
     display: inline-block;
     padding-left: 30px;
-    font-family: sans-serif;
+    font-family: 'Fredoka', sans-serif;
     font-weight: bold;
 }
 #initials{
@@ -137,7 +139,7 @@ input{
 #high-score-result{
     padding-bottom: 5px;
     font-size: x-large;
-    font-family: sans-serif;
+    font-family: 'Fredoka', sans-serif;
     font-weight: bold;
 }
 
